@@ -1,1 +1,1 @@
-include ':app', ':day1_chouqu', ':day4_lianxice'
+include ':app', ':day1_chouqu', ':day4_lianxice', ':day2_chouqu'

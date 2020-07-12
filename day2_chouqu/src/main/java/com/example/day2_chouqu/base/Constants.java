@@ -1,10 +1,8 @@
-package com.example.day1_chouqu.callback;
+package com.example.day2_chouqu.base;
 
 import android.os.Environment;
 
 import java.io.File;
-
-
 
 /**
  * Created by asus on 2019/3/5.    存放常量
@@ -12,17 +10,14 @@ import java.io.File;
 
 public interface Constants {
     //是否为debug状态,正式上线版本需要改为false
-    boolean isDebug=true;
-//    boolean isDebug = true;
+    boolean isDebug = true;
 
-      String PATH_SDCARD=Environment.getExternalStorageDirectory().getAbsolutePath()+
-                File.separator+"codeest"+File.separator+"day1_chouqu";
-//    String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() +
-//            File.separator + "codeest" + File.separator + "day1_chouqu";
-//
-      String FILE_PROVIDER_AUTHORITY="com.baidu.geek.fileprovider";
-//    String FILE_PROVIDER_AUTHORITY="com.baidu.geek.fileprovider";
-//
+
+    String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() +
+            File.separator + "codeest" + File.separator + "day4mvp2";
+
+    String FILE_PROVIDER_AUTHORITY="com.baidu.geek.fileprovider";
+
     //网络缓存的地址
     String PATH_DATA = BaseApp.sBaseApp.getCacheDir().getAbsolutePath() +
             File.separator + "data";
