@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/img_imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/img_imgview"
+        app:layout_constraintBottom_toBottomOf="@id/img_imgview"
+        app:layout_constraintLeft_toRightOf="@id/img_imgview"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        app:layout_constraintTop_toTopOf="@id/img_imgview"
+        app:layout_constraintBottom_toBottomOf="@id/img_imgview"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="left"
+        android:id="@+id/cb_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
