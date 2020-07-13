@@ -101,8 +101,17 @@ public class MainActivity extends BaseActivity<MyPresenter> implements MyView {
 
                 break;
             case R.id.bu_wan:
+                List<MyBean.T1348647909107Bean> listsd=new ArrayList<>();
+                for (int i = 0; i < list.size(); i++) {
+                    MyBean.T1348647909107Bean t1348647909107Bean = list.get(i);
+                        t1348647909107Bean.setShow(false);
+                        listsd.add(t1348647909107Bean);
+                }
+                list.clear();
+                list.addAll(listsd);
                 myAdapter.onWrit=false;
                 myAdapter.notifyDataSetChanged();
+
                 break;
         }
     }

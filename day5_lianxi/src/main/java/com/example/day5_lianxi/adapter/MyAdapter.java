@@ -48,22 +48,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         final MyBean.T1348647909107Bean t1348647909107Bean = list.get(i);
 
         if(onWrit==true){
-            viewHolder.cbBox.setVisibility(View.VISIBLE);
-        }else{
-            viewHolder.cbBox.setVisibility(View.GONE);
-        }
-        //通过 数据来控制页面
-        viewHolder.cbBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //按钮是否被按压,也就是说是否为用户行为
-               t1348647909107Bean.setShow(isChecked);
+                viewHolder.cbBox.setVisibility(View.VISIBLE);
+            }else{
+                viewHolder.cbBox.setVisibility(View.GONE);
             }
-        });
-        if (t1348647909107Bean.isShow()){
-            viewHolder.cbBox.setChecked(true);
-        }else {
-            viewHolder.cbBox.setChecked(false);
+            //通过 数据来控制页面
+            viewHolder.cbBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    //按钮是否被按压,也就是说是否为用户行为
+                    t1348647909107Bean.setShow(isChecked);
+                }
+            });
+            if (t1348647909107Bean.isShow()){
+                viewHolder.cbBox.setChecked(true);
+            }else {
+                viewHolder.cbBox.setChecked(false);
         }
         viewHolder.tvTitle.setText(t1348647909107Bean.getTitle());
         Glide.with(context).load(t1348647909107Bean.getImgsrc()).into(viewHolder.imgImgview);
