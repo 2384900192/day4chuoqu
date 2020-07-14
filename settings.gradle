@@ -1,1 +1,1 @@
-include ':app', ':day1_chouqu', ':day4_lianxice', ':day2_chouqu', ':day5_lianxi', ':day6_chuanganqi', ':day6_lianxice'
+include ':app', ':day1_chouqu', ':day4_lianxice', ':day2_chouqu', ':day5_lianxi', ':day6_chuanganqi', ':day6_lianxice', ':day_zdyview'
